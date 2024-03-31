@@ -39,7 +39,7 @@ def solution(N):
     # First need to convert N to binary
     bin_N = bin(N)[2:]
 
-    # Remove the zeros at the start and end
+    # Remove the zeros at the start
     while bin_N.startswith('0') and len(bin_N) > 1:
         bin_N = bin_N[1:]
 
