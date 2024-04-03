@@ -24,7 +24,7 @@ def check_at_edge(cur_pos, direction, N, M):
         # Also can't move if object blocking path
 
     elif direction == "D":
-        if cur_pos[0] == M - 1:
+        if cur_pos[0] == M - 1:      # TODO: Should have been N-1 instead of M. Purely due to time constraint that I didn't spot this
             # Can't move down - stay where we are
             return False
 
@@ -40,7 +40,6 @@ def check_at_edge(cur_pos, direction, N, M):
 
     # Otherwise, we have no WALL blocking our path
     return True
-
 
 def update_cur_pos(cur_pos, direction):
     """
